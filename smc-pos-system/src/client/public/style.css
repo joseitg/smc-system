@@ -1,0 +1,195 @@
+body {
+    overflow: hidden;
+    position: relative;
+    color: red;
+}
+
+#app {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px;
+    /* Aumentar/Disminuir dependiendo del browser */
+    overflow-y: scroll;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 10fr 1fr 1fr;
+    color: white;
+}
+
+.edge {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 8px;
+    background: #212121;
+    -webkit-app-region: drag;
+}
+
+.logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: #212121;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 3px solid rgba(0, 0, 0, .2);
+}
+
+.logo>p {
+    font-size: 26px;
+    padding-top: 0.8em;
+}
+
+.company-name {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 86px;
+    background: #212121;
+    text-align: center;
+    border-bottom: 3px solid rgba(0, 0, 0, .2);
+}
+
+.company-name>p {
+    font-size: 26px;
+    padding-top: 0.8em;
+}
+
+.user {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 86px;
+    background-color: #212121;
+    text-align: center;
+    
+    border-left: 1px solid rgba(0, 0, 0, .2);
+    border-bottom: 3px solid rgba(0, 0, 0, .2);
+}
+
+.user>p {
+    margin: 0px;
+    font-size: 18px;
+}
+
+.window-manager {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 86px;
+    background-color: #212121;
+    color: white;
+    
+    text-align: right;
+    border-bottom: 3px solid rgba(0, 0, 0, .2);
+}
+
+.window-manager>i {
+    font-size: 16px;
+    padding-top: 0.2em;
+    padding-right: 0.8em;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    color: white;
+}
+
+.sidebar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: #212121;
+    height: 916px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item {
+    color: white;
+    text-align: center;    
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+}
+
+.flex-item>p {
+    margin: 0px;
+}
+
+#facturacion {
+    border-right: 0px;
+    background: #424242;
+
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+
+#clientes {
+    padding-top: 52px;
+    padding-bottom: 52px;
+
+    border-right: 2px solid rgba(0, 0, 0, .2);
+}
+
+#inventario {
+    padding-top: 52px;
+    padding-bottom: 52px;
+
+    border-right: 2px solid rgba(0, 0, 0, .2);
+}
+
+#devolucion {
+    padding-top: 52px;
+    padding-bottom: 52px;
+
+    border-right: 2px solid rgba(0, 0, 0, .2);   
+}
+
+#clock {
+    padding-top: 38px;
+    padding-bottom: 30px;
+
+    border-right: 2px solid rgba(0, 0, 0, .2);    
+    border-bottom: 0px;
+}
+
+.content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: #424242;
+    height: 916px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.content>p {
+    padding: 10px;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: #212121;
+    height: 28px;    
+}
+
+.footer>p {
+    margin: 0px;
+    color: white;
+    text-align: right;
+    font-size: 12px;
+}
