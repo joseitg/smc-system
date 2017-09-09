@@ -1,0 +1,25 @@
+{
+  "name": "smc-pos-system",
+  "version": "1.0.0",
+  "description": "POS System - Super Mueblicentro",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack -d --watch",
+    "build": "webpack -p",
+    "start": "electron main.js"
+  },
+  "author": "ZeroPR, rfig081, joseitg",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "webpack": "^3.5.6"
+  }
+}
