@@ -5,7 +5,7 @@ import React from 'react';
  W Facturación
 ===============
 */
-class WrapperFacturacion extends React.Component {
+class WFacturacion extends React.Component {
     render() {
         return (
             <div className="wrapper">
@@ -47,7 +47,7 @@ class WrapperFacturacion extends React.Component {
     }
 }
 
-export default WrapperFacturacion;
+export default WFacturacion;
 
 
 

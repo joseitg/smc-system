@@ -5,7 +5,7 @@ import React from 'react';
  H Facturación
 ===============
 */
-class HeaderFacturacion extends React.Component {
+class HFacturacion extends React.Component {
     render() {
         return (
             <div className="header">
@@ -23,4 +23,4 @@ class HeaderFacturacion extends React.Component {
     }
 }
 
-export default HeaderFacturacion;
+export default HFacturacion;
