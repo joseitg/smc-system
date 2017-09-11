@@ -1,5 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
+
+import NewInvoice from './NewInvoice.jsx';
 /*
 ===============
  W Facturación
@@ -38,6 +40,7 @@ class WFacturacion extends React.Component {
                 </div>
                 <div className="content">
                     <p>Content</p>
+                    <NewInvoice />
                 </div>                
                 <div className="footer">
                     <p>Made by: CODETAKU</p>

@@ -1,4 +1,5 @@
 import React from 'react';
+
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Contenido de Nueva Facturacion
@@ -11,20 +12,20 @@ class NewInvoice extends React.Component {
     render() {
         return (
             <div className="invoice">
-                <p>wow</p>
+                <p>wubba lubba dub dub!!</p>
                 <form>
-                    Numero de Orden<input type="number" name="numOrden" id="" /><br />
-                    Nombre<input type="text" name="nombreCliente" id="" />
-                    Apellidos <input type="text" name="apellidos" id="" /><br />
-                    Fecha<input type="date" name="fecha" id="" /><br />
-                    Empleado<input type="text" name="empleado" id="" /><br />
-                    Total Factura<input type="number" name="totalFactura" id="" /><br />
-                    Pronto<input type="number" name="pronto" id="" /><br />
-                    Financiera<select name="financiera" id="">
+                    <label HTMLFor="numOrden">Numero de Orden</label><input type="number" name="numOrden" id="" /><br />
+                    <label HTMLFor="nombre"> Nombre</label><input type="text" name="nombreCliente" id="" />
+                    <label HTMLFor="apellidos">Apellidos</label><input type="text" name="apellidos" id="" /><br />
+                    <label HTMLFor="fecha">Fecha</label> <input type="date" name="fecha" id="" /><br />
+                    <label HTMLFor="empleado">Empleado</label> <input type="text" name="empleado" id="" /><br />
+                    <label HTMLFor="totalFac">Total Factura</label> <input type="number" name="totalFactura" id="" /><br />
+                    <label HTMLFor="pronto">Pronto</label> <input type="number" name="pronto" id="" /><br />
+                    <label HTMLFor="financiera">Financiera</label> <select name="financiera" id="">
                         <option value="muebleria">Muebleria</option>
                         <option value="coop">Cooperativa</option>
                     </select><br />
-                    Tipo de Venta<input type="text" name="tipodeVenta" id="" /><br />
+                    <label HTMLFor="tipodeventa">Tipo de Venta</label> <input type="text" name="tipodeVenta" id="" /><br />
                 </form>
 
             </div>
