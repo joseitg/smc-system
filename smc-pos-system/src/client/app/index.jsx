@@ -1,5 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+
 const ReactRouter = require('react-router-dom')
 const Router = ReactRouter.BrowserRouter;
 const Route = ReactRouter.Route;
@@ -11,10 +14,12 @@ class App extends React.Component {
     render() {
         return (
             <Router>
-                <div className='window'>
-                    <HFacturacion />
-                    <WFacturacion />
-                </div>
+                <MuiThemeProvider>
+                    <div className='window'>
+                        <HFacturacion />
+                        <WFacturacion />
+                    </div>
+                </MuiThemeProvider>
             </Router>
         );
     }
